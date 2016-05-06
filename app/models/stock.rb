@@ -1,4 +1,5 @@
 class Stock < ActiveRecord::Base
+  #class level (self) methods - not tied to any object or instance variable or objects life cycle. 
   
   has_many :user_stocks
   has_many :users, through: :user_stocks
