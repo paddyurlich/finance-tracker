@@ -3,11 +3,11 @@ var init_stock_lookup;
 init_stock_lookup = function() {
 
   $('#stock-lookup-form').on('ajax:before', function(event, data, status){
-    show_spinner();
+    show_spinner();  //hide_spinner and show_spinner function is in the application.js file
   });
   
   $('#stock-lookup-form').on('ajax:after', function(event, data, status){
-    hide_spinner();
+    hide_spinner(); //hide_spinner and show_spinner function is in the application.js file
   });
   
   $('#stock-lookup-form').on('ajax:success', function(event, data, status){
