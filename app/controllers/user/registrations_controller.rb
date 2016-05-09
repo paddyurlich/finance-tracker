@@ -8,3 +8,5 @@ class User::RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.for(:account_update).push(:first_name, :last_name)
   end
 end
+
+#note this controller was added manually to modify the functionality of the devise gem ie to add first name and last name. 
