@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   
   devise_for :users, :controllers => { :registrations => "user/registrations" } #edit to point to the added regirstration conrtroller first ie before the subclassed/inhertied devise controller
   resources :user_stocks, except: [:show, :edit, :update]
-  #resources :users, only: [:show]
-  #resources :friendships
+  resources :users, only: [:show]
+  resources :friendships
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
